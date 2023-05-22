@@ -2,7 +2,7 @@
 
 ## Descrição
 
-> API de operações básicas com usuários feita com Node.js e Express para simulação de operações de CRUD (Create, Read, Delete e Delete). Projeto destinado a preparação da prova prática do concurso do SERPRO. Portanto, não colocar o código em produção.
+> API de operações básicas com usuários feita com Node.js e Express para simulação de operações de CRUD (Create, Read, Update e Delete). Projeto destinado a preparação da prova prática do concurso do SERPRO. Portanto, não colocar o código em produção.
 
 ## Requisitos para executar corretamente os testes
 
@@ -25,11 +25,15 @@
 
 ---
 
-- Clone o repositório do GitHub
+- Clone o repositório do GitHub ou use a opção de template para criar um repositório na sua conta do GitHub importando o projeto.
 
-```git
+```shell
 
-git clone <url do repositório>
+# Caso queira clonar diretamente o repositório
+git clone "https://github.com/dev-ribeiro/user-authentication-template.git"
+
+# Caso use a opção de use template faça o clone do repositório da sua própria conta
+git clone "url do repositório da sua conta"
 
 ```
 
