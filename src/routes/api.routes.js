@@ -10,7 +10,7 @@ router.get('/find/:email', async (req, res) => {
 
     try {
         // TODO
-        const selectedUser = null;
+        const selectedUser = {};
 
         if (!selectedUser) {
             throw new Error();
