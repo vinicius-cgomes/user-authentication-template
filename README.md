@@ -13,11 +13,11 @@
 - [Git](https://git-scm.com/downloads);
 - [Docker](https://www.docker.com/products/docker-desktop/).
 
-## Tutorial para criar uma imagem do PostgreSQL no Docker com WSL
+## Tutorial para criar uma imagem do PostgreSQL no Docker com WSL (apenas Windows)
 
 ---
 
-- Configurando o WSL, acesse o tutorial oficial da Microsoft;
+- [Configurando o WSL](https://learn.microsoft.com/en-us/windows/wsl/install);
 
 - [Criando a imagem do PostgreSQL no Docker com WSL](https://towardsdatascience.com/local-development-set-up-of-postgresql-with-docker-c022632f13ea).
 
