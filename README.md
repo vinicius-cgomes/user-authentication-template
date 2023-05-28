@@ -96,7 +96,7 @@ Quando concluir corretamente todas as implementações, deverá ser exibido o se
 
 <br/>
 
-#### 🔹 GET <span style="font-style: italic; font-size: 18px">/find/:email</span>
+#### 🔹 GET <span style="font-style: italic; font-size: 18px">/users/:email</span>
 
 <div>
 
@@ -168,7 +168,7 @@ Quando concluir corretamente todas as implementações, deverá ser exibido o se
 
 ---
 
-#### 🔹 POST <span style="font-style: italic; font-size: 18px">/create</span>
+#### 🔹 POST <span style="font-style: italic; font-size: 18px">/users</span>
 
 <div>
 
@@ -194,7 +194,7 @@ Quando concluir corretamente todas as implementações, deverá ser exibido o se
 
 ---
 
-#### 🔹 PUT <span style="font-style: italic; font-size: 18px">/update/:id</span>
+#### 🔹 PUT <span style="font-style: italic; font-size: 18px">/users/:id</span>
 
 <div>
 
@@ -220,7 +220,7 @@ Quando concluir corretamente todas as implementações, deverá ser exibido o se
 
 ---
 
-#### 🔹 DELETE <span style="font-style: italic; font-size: 18px">/delete/:id</span>
+#### 🔹 DELETE <span style="font-style: italic; font-size: 18px">/users/:id</span>
 
 <div>
 

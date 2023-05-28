@@ -5,7 +5,7 @@ const { userUpdateAdapter } = require('../middlewares/userUpdateAdapter');
 const { userCreationAdapter } = require('../middlewares/userCreationAdapter');
 const { userLoginAdapter } = require('../middlewares/userLoginAdapter');
 
-router.get('/find/:email', async (req, res) => {
+router.get('/users/:email', async (req, res) => {
     const { email } = req.params;
 
     try {
@@ -29,7 +29,7 @@ router.post('/login/:email', userLoginAdapter, async (req, res) => {
     return res.status(200).json(user);
 });
 
-router.post('/create', userCreationAdapter, async (req, res) => {
+router.post('/users', userCreationAdapter, async (req, res) => {
     const encryptedUser = req.encryptedUser;
 
     try {
@@ -44,7 +44,7 @@ router.post('/create', userCreationAdapter, async (req, res) => {
     }
 });
 
-router.put('/update/:id', userUpdateAdapter, async (req, res) => {
+router.put('/users/:id', userUpdateAdapter, async (req, res) => {
     const { id } = req.params;
     const updatedUser = req.updatedUser;
 
@@ -58,7 +58,7 @@ router.put('/update/:id', userUpdateAdapter, async (req, res) => {
     }
 });
 
-router.delete('/delete/:id', async (req, res) => {
+router.delete('/users/:id', async (req, res) => {
     const { id } = req.params;
 
     try {
