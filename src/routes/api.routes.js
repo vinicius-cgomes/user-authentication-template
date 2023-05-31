@@ -37,7 +37,7 @@ router.post('/users', userCreationAdapter, async (req, res) => {
 
         if(!encryptedUser) throw new Error();
 
-        return res.status(201).end();
+        return res.status(201).json({});
     } catch (error) {
         console.log(error);
         return res.status(400).end();

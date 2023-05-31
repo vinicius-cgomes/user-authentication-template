@@ -50,6 +50,12 @@ describe('Testes dos endpoints da api', () => {
         }
 
         expect(response.status).toEqual(201);
+
+        const data = JSON.parse(response.text);
+
+        expect(data.firstName).toEqual(testUser.firstName);
+        expect(data.lastName).toEqual(testUser.lastName);
+        expect(data.email).toEqual(testUser.email);
     });
 
     it('deve ser possível localizar um usuário pelo email', async () => {
