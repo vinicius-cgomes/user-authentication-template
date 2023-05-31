@@ -210,7 +210,7 @@ Quando concluir corretamente todas as implementações, deverá ser exibido o se
 
 <div>
 
-  <p style="text-indent: 16px">Esta rota pode receber os parâmetros de cadastro (firstName, lastName, e password) do usuário pelo body da requisição. Deve-se efetuar o tratamento de dados para update e verificar se há ou não atualização do password. Deve-se utilizar a função findById do UserController.</p>
+  <p style="text-indent: 16px">Esta rota pode receber os parâmetros de cadastro (firstName, lastName, e password) do usuário pelo body da requisição. Deve-se efetuar o tratamento de dados para update e verificar se há ou não atualização do password. Deve-se utilizar a função findById e updateUserInfo do UserController.</p>
 
   <p>
     Em caso de <span style="color: #00FF00">Sucesso</span>:
@@ -236,7 +236,7 @@ Quando concluir corretamente todas as implementações, deverá ser exibido o se
 
 <div>
 
-  <p style="text-indent: 16px">Esta rota tem a função de apagar em definitivo um registro de usuário no banco de dados. Além disso, ela deve receber como parâmetro o id do usuário. Deve-se utilizar a função findById do UserController.</p>
+  <p style="text-indent: 16px">Esta rota tem a função de apagar em definitivo um registro de usuário no banco de dados. Além disso, ela deve receber como parâmetro o id do usuário. Deve-se utilizar a função findById e deleteUser do UserController.</p>
 
   <p>
     Em caso de <span style="color: #00FF00">Sucesso</span>:
