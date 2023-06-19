@@ -133,7 +133,7 @@ Quando concluir corretamente todas as implementações, deverá ser exibido o se
 
 ---
 
-#### 🔹 GET <span style="font-style: italic; font-size: 18px">/login/:email</span>
+#### 🔹 POST <span style="font-style: italic; font-size: 18px">/login/:email</span>
 
 <div>
 
@@ -243,7 +243,7 @@ Quando concluir corretamente todas as implementações, deverá ser exibido o se
   </p>
 
   ```typescript
-    // STATUS CODE = 202;
+    // STATUS CODE = 204;
   ```
 
   <p>

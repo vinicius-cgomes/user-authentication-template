@@ -19,7 +19,7 @@ router.get('/users/:email', async (req, res) => {
         return res.status(200).json(selectedUser);
     } catch (error) {
         console.log(error);
-        return res.status(400).end();
+        return res.status(404).end();
     }
 });
 
@@ -65,7 +65,7 @@ router.delete('/users/:id', async (req, res) => {
 
         // TODO
 
-        return res.status(202).end();
+        return res.status(204).end();
     } catch (error) {
         console.log(error);
         return res.status(404).end();
