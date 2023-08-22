@@ -8,9 +8,15 @@ const { userLoginAdapter } = require('../middlewares/userLoginAdapter');
 router.get('/users/:email', async (req, res) => {
     const { email } = req.params;
 
+    if(!email){
+        return res.status(400).end();
+    }
+
     try {
-        // TODO
-        const selectedUser = {};
+        
+        const {dataValues} = await UserController.findByEmail(email);
+        const selectedUser = {...dataValues};
+
 
         if (!selectedUser) {
             throw new Error();
@@ -33,7 +39,6 @@ router.post('/users', userCreationAdapter, async (req, res) => {
     const encryptedUser = req.encryptedUser;
 
     try {
-        // TODO
 
         if(!encryptedUser) throw new Error();
 
