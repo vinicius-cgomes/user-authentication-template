@@ -70,9 +70,13 @@ router.put('/users/:id', userUpdateAdapter, async (req, res) => {
 router.delete('/users/:id', async (req, res) => {
     const { id } = req.params;
 
+    if(!id) {
+        return res.status(400).end();
+    }
+
     try {
 
-        // TODO
+        await UserController.deleteUser(id);
 
         return res.status(204).end();
     } catch (error) {
